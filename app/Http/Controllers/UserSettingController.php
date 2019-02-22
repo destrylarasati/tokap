@@ -24,7 +24,7 @@ class UserSettingController extends Controller
 				'repassword'=>'same:password',
 			])->validate();
 
-		if (!empty($require->password)) {
+		if(!empty(($req->password)){
 			$field = [
 				'name'=>$req->name,
 				'email'=>$req->email,
@@ -37,15 +37,12 @@ class UserSettingController extends Controller
 			];
 		}
 
-		$result = User::where('id',$id)->update($field);
-
-		if ($result){
+		if ($result) {
 			return back()->with('result','success');
 		} else {
 			return back()->with('result','fail');
 		}
-
-		return "Fungsi Update";
+		
 	}
 }
 
