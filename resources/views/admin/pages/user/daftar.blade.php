@@ -5,7 +5,7 @@
 <hr>
 <div class="row">
 	<div class="col-md-6 mb-3">
-		<a href="#" class="btn btn-primary">[+] Add</a>
+		<a href="{{ route('admin.user.add') }}" class="btn btn-primary">[+] Add</a>
 	</div>
 
 	<div class="col-md-6 mb-3">
