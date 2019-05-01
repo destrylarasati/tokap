@@ -30,7 +30,7 @@ class UserSettingController extends Controller
 				'email'=>$req->email,
 				'password'=>bcrypt($req->password),
 			];
-		} else{
+		} else {
 			$field = [
 				'name'=>$req->name,
 				'email'=>$req->email,
